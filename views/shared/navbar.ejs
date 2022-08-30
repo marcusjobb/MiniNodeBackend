@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Formulär</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a <% if (pageId == 0) { %> class="active" <% } %> href="/">Home</a></li>
+            <% if (isAdmin) 
+            { %>
+                <li><a <% if (pageId == 1) { %> class="active" <% } %>href="/cat">Cat</a></li>
+                <li><a <% if (pageId == 99) { %> class="active" <% } %>href="/logout">Logout</a></li>
+            <% }
+            else
+            { %>
+                <li><a <% if (pageId == 99) { %> class="active" <% } %>href="/login">Login</a></li>
+            <% } %>
+        </ul>
+    </div>
+</nav>

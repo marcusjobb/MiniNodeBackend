@@ -1,0 +1,24 @@
+<% pageId = 99 %>
+<%- include('./shared/header.ejs', {addJs:[]}) %>
+                <h2>Logga in.</h2>
+                <form action="/login" method="POST">
+                <div class="row">
+                        <div class="col-sm-4 column col-lg-2">
+                                Namn:
+                        </div>
+                        <div class="col-sm-4 column col-lg-8">
+                                <input type="text" name="username" id="username" placeholder="Användarnamn" required>
+                                <input type="password" name="password" id="password" placeholder="Lösenord" required>
+                        </div>
+                </div>
+                <div><br></div>
+                    <div class="row">
+                        <div class="col-sm-4 column col-lg-2">
+                        </div>
+                        <div class="col-sm-4 column col-lg-8">
+                                <input type="submit" value="Logga in" class="submitButton"/>
+                        </div>
+                    </div>
+                    <div><br></div>
+                </form>
+                <%- include('./shared/footer.ejs') %>

@@ -1,0 +1,104 @@
+body {
+    background-color: #16314E;
+    font-size: 28px;
+    color: #FDDB00;
+}
+
+/* place footer at bottom */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #3f3912;
+}
+
+#topright {
+    position: absolute;
+    right: 0;
+    top: 30;
+    display: block;
+    height: 300px;
+    background: url(TRbanner.gif) no-repeat;
+    text-indent: -999em;
+    text-decoration: none;
+    z-index: -10;
+}
+
+@media screen and (max-width: 1710px) {
+    #topright {
+        position: absolute;
+        right: 0;
+        top: 00;
+        display: block;
+        height: 150px;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #topright {
+        display: none;
+    }
+}
+
+.active {
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.checkboxes {
+    margin-right: 10px !important;
+}
+
+footer {
+    padding-top: 140px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.submitButton {
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    font: bold15px arial, sans-serif;
+    text-shadow: none;
+}
+
+.submitButton:disabled {
+    background: #c2d9e6;
+    color: rgb(59, 59, 59);
+    border-style: outset;
+    border-color: #c2d9e6;
+    height: 50px;
+    font: bold15px arial, sans-serif;
+    text-shadow: none;
+}
+
+.orgList {
+    font-size: 22px;
+}
+
+input[type=text] {
+    background-color: black;
+    color: #FDDB00;
+}
+
+input[type=password] {
+    background-color: black;
+    color: #FDDB00;
+}
+
+input[type=email] {
+    background-color: black;
+    color: #FDDB00;
+}
+
+input[type=number] {
+    background-color: black;
+    color: #FDDB00;
+}

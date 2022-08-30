@@ -1,0 +1,8 @@
+<% pageId = 1 %>
+<%- include('./shared/header.ejs', {addJs:['pageJs/done.js']}) %>
+
+<h1>Meow!</h1>
+<% for(var i=0; i < 4; i++) {%> <!-- for loop i mallen-->
+    <br>Meeeeow!
+<% } %>
+<%- include('./shared/footer.ejs') %>

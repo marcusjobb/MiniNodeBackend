@@ -1,0 +1,19 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Minimalwebbsida med Node</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <% for(var i=0; i < addJs.length; i++) {%>
+    <script src="/js/<%= addJs[i] %>"></script>
+    <% } %>
+</head>
+<body>
+    <%- include('./navbar.ejs', {pageId:pageId, isAdmin:isAdmin}) %>
+    <div class="container">
+        <img id="topright" src="/img/molndal_logo2.webp"/>

@@ -1,0 +1,26 @@
+{
+  "name": "fro_node_form",
+  "version": "1.0.8",
+  "description": "Form for FRO",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "FRO"
+  ],
+  "author": "Marcus Medina",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-minify-html": "^0.10.0",
+    "express-session": "^1.17.3",
+    "mongodb": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
